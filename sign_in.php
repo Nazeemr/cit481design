@@ -1,13 +1,7 @@
 <?php
 
-function OpenCon(){
-    $dbhost = "testdata2-instance-1.crxvoye8t6bs.us-west-1.rds.amazonaws.com";
-    $dbuser = "admin";
-    $dbpass = "password";
-    $db = "project";
-    $db = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("connect failed: %s\n". $db -> error);
-    return $db;
-}
+$db = mysqli_connect('testdata2-instance-1.crxvoye8t6bs.us-west-1.rds.amazonaws.com', 'admin', 'password','project');
+
 
 
 
