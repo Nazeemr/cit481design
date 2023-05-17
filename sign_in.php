@@ -34,7 +34,7 @@ if (isset($_POST['login']))  /*$_POST['JS Name="" "]*/
             $_SESSION['log_user_name'] = $check['user_id'];
             
   
-            header("profile.html"); /* This line goes to dashboard.html; destination  */
+            header("location: profile.html"); /* This line goes to dashboard.html; destination  */
             echo "Session user Name: ".$_SESSION['log_user_name']."<br/>";
   
           } 
