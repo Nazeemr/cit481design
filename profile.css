@@ -1,0 +1,170 @@
+a {
+  font-family: "Anonymous Pro", monospace;
+  color: orange;
+  font-size: 1.4em;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background: #f0f8ff; /*background: lightblue;*/
+  margin: 0;
+}
+  /* This right here simply wraps everything since wrap is used in every section and now I have a flex flow in the css aswell*/
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+
+  flex-flow: row wrap;
+}
+
+/* Header & Footer 
+------------------------------------*/
+  /* By adding row wrap on the flex flow here we can see that the nav bar is now being wrapped around the screen when it is being zoomed in on*/
+.nav {
+  position: relative;
+  left: 0;
+  right: 0;
+  font-family: "Roboto Slab", serif;
+  border: 1px solid #cccccc;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: black;
+    display: flex;
+  flex-flow: row wrap;
+  
+  justify-content: center;
+}
+
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .nav {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .nav {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  display: inline-block;
+  padding: 10px;
+  color: orange;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.profile-img {
+  border-radius: 50%;
+ 
+ 
+}
+footer {
+  text-align: center;
+}
+.headerfooter {
+    /* by adding flex here it is just an easy way to center my whole page, so I just add a flex-flow center to every section on my site and that simply centers everything without me needing to worry how my page is structured*/
+  background: #575757;
+  color: white;
+ flex-flow: center;
+
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+.column-narrow {
+  width: 30%;
+  float: left;
+  padding: 1%;
+  min-height: 175px;
+}
+.column-wide {
+  width: 70%;
+  float: left;
+  min-height: 225px;
+}
+/* Work Experience
+------------------------------------*/
+.workexperience {
+      /* by adding flex here it is just an easy way to center my whole page, so I just add a flex-flow center to every section on my site and that simply centers everything without me needing to worry how my page is structured*/
+  background: #dfdfdf;
+ flex-flow: center;
+}
+
+/* Education
+------------------------------------*/
+.margin {
+  margin: 0% 0;
+}
+.pictures {
+  background: url("https://cdn.glitch.global/9e22343d-dd53-4c56-8d27-33bd1dd8abd2/redd-Dl_Ya8eNRpk-unsplash.jpg?v=1665554635246")
+    repeat fixed 100%;
+}
+.alpha-bg {
+  background: rgba(92, 205, 214, 0.27);
+}
+.education {
+      /* by adding flex here it is just an easy way to center my whole page, so I just add a flex-flow center to every section on my site and that simply centers everything without me needing to worry how my page is structured*/
+  background: #c7ccb1;
+ flex-flow: center;
+}
+
+h1 {
+  font-family: "Silkscreen", cursive;
+  font-size: 3em;
+  margin: 0;
+}
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.8em;
+  margin-top: 0;
+  margin: 0;
+}
+h3 {
+  font-size: 2em;
+  margin: 0;
+}
+p {
+  font-size: 1.3em;
+}
+ul {
+  font-size: 1.3em;
+}
+
+/* We tell all items to be 100% width, via flex-basis */
+.content-wrap > * {
+  flex: 1 100%;
+}
+
+
+.box {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+.info {
+  color: brown;
+  background: cornsilk;
+  border: 1px solid burlywood;
+}
