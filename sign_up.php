@@ -48,6 +48,7 @@ if (isset($_POST['sign_up'])) {
 	<div class="container__form container--signup">
 		<form action="sign_up.php" class="form" id="form1" method="post">
 			<h2 class="form__title">Sign Up</h2>
+			<p Please make a user name and password and make sure to remember it. This will be your log in credentials moving forward </p>
 			<input type="text" placeholder="User ID: " class="input" name="user_id" id="user_id"  for="user_id"/>
 			<input type="text" placeholder="Password: " class="input" name="user_pass" id="user_pass" for="user_pass"/>
 			<button class="btn" name="sign_up">Sign Up</button>
