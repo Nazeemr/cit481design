@@ -1,6 +1,6 @@
 <?php
 
-include("senior_database_connect.php"); 
+$db = mysqli_connect('testdata2-instance-1.crxvoye8t6bs.us-west-1.rds.amazonaws.com', 'admin', 'password','project'); 
 
 
 if (isset($_POST['sign_up'])) {
